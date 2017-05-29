@@ -74,7 +74,7 @@ public:
     * @param timeout timeout of the connection
     * @param delimiter string of characters to use as line delimiters
     */
-    ATParser(BufferedSerial &serial, const char *delimiter = "\r\n", int buffer_size = 1912, int timeout = 8000, bool debug = false) :
+    ATParser(BufferedSerial &serial, const char *delimiter = "\r\n", int buffer_size = 1612, int timeout = 8000, bool debug = false) :
         _serial(&serial),
         _buffer_size(buffer_size) {
         _buffer = new char[buffer_size];
